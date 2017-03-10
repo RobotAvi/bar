@@ -1,10 +1,16 @@
 package bar
 
 class Beer {
-	String name
-	String email
-	Date birthdate
-    
-	static constraints = {
-    }
+	Member giver
+	Member receiver
+	Date dateCreated
+	int amount
+	
+    static constraints = {
+      //   giver unique: 'receiver'		 
+        // receiver unique: 'giver'
+
+		
+	 }
+	
 }

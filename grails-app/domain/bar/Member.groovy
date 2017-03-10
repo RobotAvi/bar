@@ -1,11 +1,11 @@
 package bar
 
 class Member {
-	Member giver
-	Member receiver
-	Date dateCreated
-	int amount
+	String name
+	String email
+	Date birthdate
     
 	static constraints = {
+	
     }
 }
