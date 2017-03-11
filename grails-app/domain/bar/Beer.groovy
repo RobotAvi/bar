@@ -7,10 +7,9 @@ class Beer {
 	int amount
 	
     static constraints = {
-      //   giver unique: 'receiver'		 
-        // receiver unique: 'giver'
-
-		
-	 }
+         giver unique: 'receiver' , validator: { val, obj -> return !obj.receiver.equals(val)		 
+         receiver unique: 'giver'	
+		}
+	}
 	
 }

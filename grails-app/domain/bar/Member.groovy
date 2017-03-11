@@ -6,6 +6,5 @@ class Member {
 	Date birthdate
     
 	static constraints = {
-	
     }
 }
