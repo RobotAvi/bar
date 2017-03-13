@@ -10,6 +10,5 @@ class Beer {
          giver unique: 'receiver' , validator: { val, obj -> return !obj.receiver.equals(val)		 
          receiver unique: 'giver'	
 		}
-	}
-	
+	}	
 }

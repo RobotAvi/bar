@@ -14,4 +14,6 @@ class MemberController {
 		memberService.clearMembers()
 		redirect(controller: "Member", action: "index")
 	}
+		
+
 }
