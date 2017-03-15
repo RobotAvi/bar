@@ -9,7 +9,6 @@ class BeerService {
     def memberService
 
     def createRandomBeers() {
-
         if (Member.count() < 2) {
             memberService.createRandomMembers()
         }
@@ -19,18 +18,18 @@ class BeerService {
         def randomBeerCountIdx
         def newBeer
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             randomGiverIdx = new Random().nextInt(allMembers.size())
             randomReceiverIdx = new Random().nextInt(allMembers.size())
             while (randomGiverIdx == randomReceiverIdx) {
                 randomReceiverIdx = new Random().nextInt(allMembers.size())
                 randomGiverIdx = new Random().nextInt(allMembers.size())
             }
-            randomBeerCountIdx = new Random().nextInt(10)
+            randomBeerCountIdx = new Random().nextInt(100)
+
             newBeer = new Beer(giver: allMembers[randomGiverIdx], receiver: allMembers[randomReceiverIdx], dateCreated: new Date(), amount: randomBeerCountIdx)
             newBeer.save()
         }
-
     }
 
     def clearBeers() {
