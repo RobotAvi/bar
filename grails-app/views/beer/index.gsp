@@ -13,7 +13,7 @@
 
 <div class="nav" role="navigation">
     <ul>
-        <li><g:link action="clearAll">Show table</g:link></li>
+        <li><g:link action="table">Show table</g:link></li>
         <li><g:link action="json">Get Json For Element #6</g:link></li>
         <li><g:link action="get3d">Show beers in 3d</g:link></li>
     </ul>
